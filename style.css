@@ -1,0 +1,211 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #3d2b1f;
+    color: white;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 2rem;
+}
+
+.nav-links {
+    list-style-type: none;
+    display: flex;
+}
+.nav-links li:first-child {
+	text-decoration:underline;
+	color:#ff9966;
+
+}
+.nav-links li {
+    margin: 0 1rem;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+	background-image:url("img/noise_transparent@2x.png");
+
+}
+.hero-text{
+	margin:4rem;
+	margin-top:12rem;
+	margin-left:0rem;
+	max-width:800px;
+	
+}
+.hero-text h1 {
+
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+.hero-text p {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+}
+
+.cta-button {
+    padding: 0.75rem 1.5rem;
+    background-color: #ff9966;
+    border: none;
+    color: white;
+    font-size: 1.1rem;
+    cursor: pointer;
+    text-decoration: none;
+	border-radius:20px;
+}
+
+.hero-image img {
+	max-height:728px;
+    max-width: 698px;
+    border-radius: 15px;
+	position: relative;
+	margin-bottom:-40px;
+}
+
+.about {
+    padding: 4rem 2rem;
+    background-color: white;
+}
+
+.about-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+	
+}
+.about-text{
+	max-width:630px
+
+}
+.about-text h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.pets {
+    padding: 4rem 2rem;
+    background-color: #f1f1f1;
+    text-align: center;
+}
+
+.pets h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.pets-grid {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.pet-card {
+    background-color: white;
+    border-radius: 15px;
+    padding: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.pet-card img {
+    max-width: 200px;
+    border-radius: 10px;
+}
+
+.pet-button {
+    padding: 0.5rem 1rem;
+    background-color: #ff9966;
+    border: none;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 1rem;
+	border-radius:20px;
+}
+
+.help {
+    padding: 4rem 2rem;
+    background-color: #fff;
+    text-align: center;
+}
+.help h2{
+	margin-bottom:4rem;
+}
+.help-items {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.help-item {
+    text-align: center;
+}
+
+.donation {
+	display:flex;
+	align-items:center;
+	justify-content:center;
+    padding: 4rem 2rem;
+    background-color: #f1f1f1;
+    text-align: center;
+	
+}
+.bank-info{
+	float:center;
+	background-color:#ff9966;
+	border-radius:20px;
+	max-height:40px;
+	}
+footer {
+    background-color: #3d2b1f;
+    color: white;
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-info, .locations {
+    text-align: left;
+}
+
+footer p {
+    margin-bottom: 1rem;
+	color:white;
+}
+footer strong {
+	font:Georgia;
+	font-size:35px;
+	Line-height:45.5px;
+}
+.footer-image{
+	margin:0;
+	padding: 0 ;
+	margin-bottom:-32px;
+	padding-bottom:-5px;
+}

@@ -14,6 +14,7 @@ body {
 header {
     background-color: #3d2b1f;
     color: white;
+	background-image:url("img/noise_transparent@2x.png");
 }
 
 nav {
@@ -46,8 +47,7 @@ nav {
     display: flex;
     justify-content: space-between;
     padding: 2rem;
-	background-image:url("img/noise_transparent@2x.png");
-
+	
 }
 .hero-text{
 	margin:4rem;
@@ -86,6 +86,170 @@ nav {
 	margin-bottom:-40px;
 }
 
+@media (max-width:1184px){
+	.hero{
+
+		flex-direction:column;
+		justify-content:center;
+	}
+	.hero-text{
+		margin-top:0;
+	}
+
+	.hero-image img {
+		justify-content:center;
+	}
+}
+@media (min-width:768px){
+	.active{
+		display:none;
+	}
+	ul img{
+		display: none;
+	}
+	.hamburger {
+		display:none;
+	}
+}
+@media (max-width:768px){
+	section{
+		margin:0 auto;
+	}
+	.hamburger, .close {
+	  border: none;
+	  cursor: pointer;
+	  position: absolute;
+	  top: 20px;
+	  right: 20px;
+	  width: 36px;
+	  height: 36px;
+	}
+
+	.hamburger {
+	  background: white;
+	}
+
+	.close {
+	  background: black;
+	}
+
+	.hamburger img, .close img {
+	  width: 100%;
+	  height: 100%;
+	  background-image:url("img/noise_transparent@2x.png");
+	}
+
+	.navbar {
+	  position: absolute;
+	  z-index: 1000;
+	  top: 0;
+	  left: 0;
+	  width: 100%;
+	  height: 100vh;
+	  overflow: hidden;
+	  list-style: none;
+	  background: black;
+	  display: flex;
+	  flex-flow: column nowrap;
+	  justify-content: space-evenly;
+	  align-items: center;
+	  transform: translateY(-100%);
+	  transition: transform 0.2s ease;
+	}
+
+
+	.navbar:target {
+	  transform: translateY(0);
+	}
+
+	li a {
+	  display: block;
+	  font-family: 'Open Sans', sans-serif;
+	  color: white;
+	  font-weight: bold;
+	  font-size: 1.2rem;
+	  text-decoration: none;
+	  border-bottom: 1px solid black;
+	  padding-bottom: 0.5rem;
+	}
+
+	li a:hover, li a:focus {
+	  border-bottom: 1px solid white;
+	}
+		h1{
+		
+	font-family: Georgia;
+	font-size: 25px;
+	font-weight: 400;
+	line-height: 32.5px;
+	letter-spacing: 0.06em;
+
+	}
+	h2{
+	font-family: Georgia;
+	font-size: 25px;
+	font-weight: 400;
+	line-height: 32.5px;
+	letter-spacing: 0.06em;
+
+	}
+	p{
+	font-family: Arial;
+	font-size: 15px;
+	font-weight: 400;
+	line-height: 24px;
+	};
+	
+}
+@media (max-width:680px){
+	img{
+		max-width:300px;
+	}
+	.hero-image img{
+		max-width:450px;
+		margin-top:1rem;
+	}
+}
+@media (max-width:320px){
+	h1{
+		
+	font-family: Georgia;
+	font-size: 15px;
+	font-weight: 400;
+	line-height: 32.5px;
+	letter-spacing: 0.06em;
+	text-align: center;
+
+	}
+	h2{
+	font-family: Georgia;
+	font-size: 15px;
+	font-weight: 400;
+	line-height: 32.5px;
+	letter-spacing: 0.06em;
+	text-align: center;
+
+	}
+	p{
+	font-family: Arial;
+	font-size: 15px;
+	font-weight: 400;
+	line-height: 24px;
+	text-align: center;
+	}
+	img{
+		max-width:200px;
+	}
+	.hero-text{
+		margin:0;
+	}
+	.hero-image img{
+		max-width:300px;
+		margin-top:1rem;
+	}
+}
+
+
 .about {
     padding: 4rem 2rem;
     background-color: white;
@@ -105,7 +269,14 @@ nav {
     font-size: 2rem;
     margin-bottom: 1rem;
 }
-
+@media (max-width:768px){
+	.about-content {
+		flex-direction:column;
+	}
+}
+@media (max-width:320px){
+	
+}
 .pets {
     padding: 4rem 2rem;
     background-color: #f1f1f1;
@@ -116,13 +287,25 @@ nav {
     font-size: 2.5rem;
     margin-bottom: 2rem;
 }
+.pets-list{
+	display:flex;
+	flex-direction:row;
+	justify-content: center;
+    gap: 2rem;
+	flex-wrap:wrap;
+}
 
 .pets-grid {
     display: flex;
     justify-content: center;
     gap: 2rem;
+	flex-wrap:wrap;
+	
 }
-
+.pets-list button{
+	border:none
+	
+}
 .pet-card {
     background-color: white;
     border-radius: 15px;
@@ -134,6 +317,14 @@ nav {
 .pet-card img {
     max-width: 200px;
     border-radius: 10px;
+}
+@media (max-width:1000px){
+	.pets-grid {
+		
+	}
+	.pet-card {
+		flex-basis:1 1 30%;
+	}
 }
 
 .pet-button {
@@ -166,7 +357,14 @@ nav {
 .help-item {
     text-align: center;
 }
-
+@media (max-width:768px){
+	.help-items {
+		flex-wrap:wrap;
+	}
+}
+@media (max-width:320px){
+	
+}
 .donation {
 	display:flex;
 	align-items:center;
@@ -182,6 +380,14 @@ nav {
 	border-radius:20px;
 	max-height:40px;
 	}
+	@media (max-width:768px){
+	.donation{
+		flex-direction:column;
+	}
+}
+	@media (max-width:320px){
+	
+}
 footer {
     background-color: #3d2b1f;
     color: white;
@@ -196,16 +402,29 @@ footer {
 
 footer p {
     margin-bottom: 1rem;
-	color:white;
+	color:#F1CDB3;
+	align-items:center;
+	padding-bottom:10px;
 }
 footer strong {
 	font:Georgia;
 	font-size:35px;
 	Line-height:45.5px;
 }
+.icon_for_footer{
+	margin-right:10px;
+}
 .footer-image{
 	margin:0;
 	padding: 0 ;
 	margin-bottom:-32px;
 	padding-bottom:-5px;
+}
+	@media (max-width:768px){
+	footer{
+		flex-direction:column;
+	}
+}
+	@media (max-width:320px){
+	
 }
